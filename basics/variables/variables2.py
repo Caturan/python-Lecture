@@ -46,3 +46,36 @@ a, s, d = fruits
 print(a)
 print(s)
 print(d)
+
+
+
+
+#          Output Variables
+
+# In the print() function, we output multiple variables, seperated by a comma:
+x = "Python"
+y = "is"
+z = "good"
+print(x, y, z)
+
+
+# We can use the + operator to output multiple variables: 
+f = "Python"
+g = "is"
+h = "good"
+print(f + g + h)
+
+
+# For the numbers, the + character works as a mathematical operator:
+j = 6
+k = 11
+print(j + k)
+
+
+# In the print() functiom, when we try to combine a string and a number with the + operator, Python will give us an error. 
+
+
+# The best way to output multiple variables in the print() function is to separate them with commas, which even support different data types:
+z = 7
+c = "CAT"
+print(c, z)
