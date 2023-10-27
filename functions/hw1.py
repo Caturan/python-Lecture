@@ -7,8 +7,14 @@ def custom_equation(x: int = 0, y: int = 0, a: int = 1, b: int = 1, c: int = 1):
     return float(result)
 
 print(custom_equation(2, 5, 4, 5, 5))
-
-
+"""
+A function returns a tuple of an int and a dictionary
+Function must count the number of calls with caller information
+Returning integer is the total number of calls
+Returning dictionary with string keys and integer values includes 
+the caller ( _ _name_ _ ) as key, the number of call coming from 
+this caller as value
+"""
 def fn_w_counter() -> (int, dict[str, int]):
     # Başlangıç değerlerini ayarla 
     if not hasattr(fn_w_counter, "call_count"):
