@@ -1,6 +1,6 @@
 # Convert a float number to binary. 
 
-class BinaryRepresentation():
+class HalfPrecison():
     def __init__(self, number):
         if not isinstance(number, float):
             raise TypeError("Number must be float")
@@ -13,7 +13,11 @@ class BinaryRepresentation():
         integer_part = int(self.number)
         decimal_part = self.number - integer_part
         self.result = binary_rep_res(integer_part, decimal_part)
+
+        self.result = self.result[:16].ljust(16, '0')
+
         return self.result
+
     
 def binary_rep_res(integer_part, decimal_part):
     return f"{calculate_binary_rep_for_int_part(integer_part)}.{calculate_binary_conversion_for_dec_part(decimal_part)}"
@@ -49,7 +53,7 @@ def main():
     main()
 
 if __name__ == "__main__":
-    x = binary_rep_res(375, 814)
+    x = binary_rep_res(13,375)
     print(x)
     y = list(x)
     # print(y)
@@ -63,8 +67,8 @@ if __name__ == "__main__":
 
     sign = " "
    
-    i = (y[0:z] ,": is integer part")
-    m = (y[z+1:-1], ": is float part")
+    i = (y[0:z])
+    m = (y[z+1:-1])
     if k == '1':
        sign = "Positive sign"
     else:
@@ -72,7 +76,7 @@ if __name__ == "__main__":
 
     # print(sign)
 
-    print(i, ": is integer part of binary conversion ", 
+    print(i, ": is exponent part of binary conversion ", 
     m, ": is mantassi part of conversion ",
     sign, ": is sign of the binary number")
 
