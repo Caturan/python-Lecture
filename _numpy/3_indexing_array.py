@@ -4,7 +4,7 @@ import numpy as np
     Access Array Elements
 Array indexing is the same as accessing an array element. 
 We can acces an arrray element by referring to its index number. 
-The indexes in NumPy arrays start with 0, meaning that the first element has index 0, and the seconnd has index 1 etc.
+The indexes in NumPy arrays start with 0, meaning that the first element has index 0, and the second has index 1 etc.
 """
 
 arr = np.array([1,2,3,4])

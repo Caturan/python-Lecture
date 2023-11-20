@@ -52,7 +52,7 @@ print(arr)
 
 """ 
     Check Number of Dimensions? 
-NumPy Arrays provides the ndim attribute that returns an integer that tells us how many dimensions the array have.
+NumPy Arrays provides the 'ndim' attribute that returns an integer that tells us how many dimensions the array have.
 """
 a = np.array(42)
 b = np.array([1, 2, 3, 4, 5])
@@ -67,7 +67,7 @@ print(d.ndim)
 """
     Higher Dimensional Arrays
 An array can have any number of dimensions. 
-When the array is created, we can define the number of dimensions by using the ndim argument. 
+When the array is created, we can define the number of dimensions by using the 'ndmin' argument. 
 """
 arr = np.array([1,2,3,4], ndmin=5)
 print(arr)
