@@ -143,6 +143,37 @@ Data Types in NumPy:
 - V fixed chunk of memory for other type
 """
 
+a_py = [1,2,3]
+b_py = [4,5,6]
+c_py = a_py + b_py
+
+a_np = np.array([1,2,3])
+b_np = np.array([4,5,6])
+c_np = a_np + b_np
+
+c_np_like_python = np.append(a_np, b_np) 
+
+n = np.array([[1,2,3],
+              [4,5,6],
+              [7,8,9]])
+
+def n_print(n):
+    print(sum(n))
+    print(np.sum(n))
+    print(np.sum(n, axis=0))
+    print(np.sum(n, axis=1))
+    print('')
+
+    try:
+        print(np.sum(n, axis=2))
+    except np.AxisError:
+        for i in range(n.ndim):
+            print(np.sum(n, axis=i))
+    finally:
+        pass
+def _print(*args):
+    print(args)
+
 
 def main():
     print("Hello")
@@ -151,6 +182,19 @@ def main():
     _typecodes()
     _sctypes()
 
+    print(c_py)
+    print(c_np)
+
+    print(c_py*3)
+    print(c_np*3)
+    
+    print(c_np_like_python)
+    
+    print('')
+    
+    n_print(n)
+
+    
 
 if __name__ == "__main__":
     main()
