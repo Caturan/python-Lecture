@@ -1,0 +1,37 @@
+import numpy as np 
+
+"""
+    Splitting is reverse operation of Joining.
+    Joining merges multiple arrays into one and Splitting breaks one array into multiple.
+    We use array_split() for splitting arrays, we pass it the array we want to split and the number of splits.
+"""
+
+arr = np.array([1,2,3,4,5,6])
+newarr = np.array_split(arr,3)
+print(newarr)
+
+# If the array has less elements than required, it will adjust from the end accordingly. 
+newarr = np.array_split(arr,4)
+print(newarr)
+
+
+"""
+    The return value of the array_split() method is an array containing each of the split as an array.
+    If we split an array into 3 arrays, we can access them from the result just like any array element:
+"""
+
+newarr = np.array_split(arr,3)
+print(newarr[0])
+print(newarr[1])
+print(newarr[2])
+
+# The example above returns three 2-D arrays
+arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]])
+newarr = np.array_split(arr, 3)
+print(newarr) 
+
+# An alternate solution is using hsplit() opposite of hstack()
+newarr = np.hsplit(arr,3)
+print(newarr)
+
+# Note: Similar alternates to vstack() and dstack() are available as vsplit() and dsplit().
