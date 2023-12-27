@@ -6,7 +6,7 @@ Object-Oriented Programming (OOP)
 
 """
 Define a Class:
-    Primitice data structures-like numbers, strings, and lists-are designed to represent simple things, such as the cost of something.
+    Primitive data structures-like numbers, strings, and lists-are designed to represent simple things, such as the cost of something.
     What if we want to represent something much more complicated?
     A great way to make code more manageable and more maintainable is to use classes. 
 """
@@ -16,7 +16,7 @@ Classes vs Instances:
     Classes are used to create user-defined data structures. 
     Classes also have special functions, called methods, that define behaviours and actions that an object created from the class can perform with its data. 
 
-    In this chapter we'll create a Dof class that stores some basic information about a dog. 
+    In this chapter we'll create a Dog class that stores some basic information about a dog. 
     It's important to note that a class just provides structure. 
     A class is a blueprint for how something should be defined. It doesn't actually provide any real content itself. 
     The Dog class may specify that the name and age are necessary for defining a dog, but it will not actually state what a specific dog's name or age is. 
@@ -33,7 +33,7 @@ Classes vs Instances:
 
 """
 How to Define a Class:
-    All class definitions start with the class keywoord, which is followed by the name of the class and a colon. 
+    All class definitions start with the class keyword, which is followed by the name of the class and a colon. 
     This is similar to the signature of a function, except that we don't need to add any parameters in parentheses. 
     Here is an example of a simple Dog class:
     class Dog:
@@ -108,8 +108,8 @@ Instance Methods:
 """
 class Dog:
      def __init__(self,name,age):
-             self.name = name
-             self.age = age
+            self.name = name
+            self.age = age
      def description(self):
              return f"{self.name} is {self.age} years old"
      def speak(self, sound):
@@ -139,4 +139,5 @@ class Dog:
 
 buddy = Dog("Buddy", 3)
 print(buddy)
+
 
