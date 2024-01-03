@@ -65,8 +65,9 @@ print(time)
     The code in the with block gets a new Cursor object using connection.cursor() and then gets the current time with the Cursor object's .execute() and .fetchone() methods. 
 
     Managing our database connections in a with statement has many advantages. 
-    The resulting code is oftn cleaner and shorter than code written without a with statement. 
+    The resulting code is often cleaner and shorter than code written without a with statement. 
 """
+
 
 
 
