@@ -1,0 +1,17 @@
+
+Summary
+    We learned how to interact with the SQLite database
+    that comes with Python. SQLite is a small and light SQL database that
+    can be used to store and retrieve data in your Python programs. To
+    interact with SQLite in Python, you must import the sqlite3 module.
+
+    To work with an SQLite database, you first need to connect to existing database, or create a new database, with the sqlite3.connect()
+    function, which returns a Connection object. Then you can use the
+    Connection.cursor() method to get a new Cursor object
+
+    Cursor objects are used to execute SQL statements and retrieve query
+    results. For example, Cursor.execute() and Cursor.executescript() are
+    used to execute SQL queries. You can retrieve query results using the
+    Cursor.fetchone() and Cursor.fetchall() methods.
+
+    

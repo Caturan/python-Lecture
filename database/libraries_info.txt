@@ -1,0 +1,15 @@
+
+Libraries for Working With Other SQL Databases
+    If we have a particular type of SQL database that we would like to access through Python, 
+    most of the basic syntax is likely to be identical to what we just learned for SQLite. 
+
+    - pyodbc: which connects to ODBC (Open Database Connection) databases, such as Microsoft SQL Server
+    - psycopg2: which connects to the PostreSQL database
+    - PyMySQL: which connects to MySQL databases 
+
+    The SQLAlchemy package is another popular option for working with databases. 
+    SQLAlchemy is an object-relational mapping, or ORM, that uses an object-oriented paradigm to build database queries. 
+    It can be configured to connect to a variety of databases. 
+    The object-oriented approach allows us to make queries without writing and raw SQL statements. 
+    
+     
