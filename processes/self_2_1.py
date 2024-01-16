@@ -4,7 +4,7 @@ Server Process:
     Whenever a python program starts, a server process is also started. 
     From there on, whenever a new process is needed, the parent process connects to the server and request it to fork a new process. 
     
-    A server process can hold Pytohn objects and allows other processes to manipulate them using proxies. 
+    A server process can hold Python objects and allows other processes to manipulate them using proxies. 
     multiprocessing module provides a Manager class which controls a server process. Hence, managers provide a way to create data that can be shared between different processes. 
 
     Server process managers are more flexible than using shared memory objects because they can be made to support arbitrary object types like:

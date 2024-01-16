@@ -26,6 +26,7 @@ def withdraw(balance):
 def deposit(balance):
     for _ in range(10000):
         balance.value = balance.value + 1
+
 def perform_transactions():
     balance = multiprocessing.Value('i', 100)
 

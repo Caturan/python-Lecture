@@ -1,7 +1,7 @@
 
 """
 Share Data between Processes
-    Piper are the fundamental IPC (inter-process communication) mechanism provided by the operating system. 
+    Pipes are the fundamental IPC (inter-process communication) mechanism provided by the operating system. 
     They are used for one-way (simplex) or two-way (duplex) communication between processes. 
 """
 
