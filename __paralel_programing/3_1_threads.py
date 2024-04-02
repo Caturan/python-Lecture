@@ -103,3 +103,11 @@ t2 = threading.Thread(target=thread_6)
 t1.daemon = True
 t1.start()
 t2.start()
+
+
+def thread_7():
+    print("deneme thread")
+
+t7 = threading.Thread(target=thread_7, daemon= True)
+
+t7.start()

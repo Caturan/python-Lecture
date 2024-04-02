@@ -33,6 +33,9 @@ class ContextManager:
 def main() -> None:
     with ContextManager() as cm:
         cm("example task")
+    print()
+    contextobject = ContextManager()
+    contextobject("obje")
 
 if __name__ == "__main__":
     main()
@@ -52,23 +55,26 @@ class AsyncContextManager:
 
     async def __aenter__(self) -> "AsyncContextManager":
         print(f"Entering {self.__class__.__name__}")
-        await asyncio.sleep(0)
+        await asyncio.sleep(1)
         return self
 
     async def __aexit__(self, exc_type, exc_val, exc_tb) -> bool:
         print(f"Exiting {self.__class__.__name__}")
         print(f"e: {exc_type}, v: {exc_val}, tb: {exc_tb}")
-        await asyncio.sleep(0)
+        await asyncio.sleep(1)
         return True
 
     async def __call__(self, task: str) -> None:
         print(f"Calling {task}")
-        await asyncio.sleep(0)
+        await asyncio.sleep(1)
         return None
 
 async def async_main() -> None:
     async with AsyncContextManager() as acm:
         await acm("example task")
+    print()
+    asyncobje = AsyncContextManager()
+    await asyncobje("async_obje")
 
 if __name__ == "__main__":
     asyncio.run(async_main())

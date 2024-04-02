@@ -60,6 +60,8 @@ async def main():
     await AwaitableClass()
     awaitable_object = AwaitableClass()
     await awaitable_object
+    awaitable_object = AwaitableClass()
+    await awaitable_object
     print("Ending main")
 
 asyncio.run(main())
