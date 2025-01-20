@@ -1,0 +1,9 @@
+{
+    "app_name": "MyApp",
+    "version": "1.0.0",
+    "settings": {
+        "theme": "dark",
+        "notifications": true,
+        "auto_save": true
+    }
+}
